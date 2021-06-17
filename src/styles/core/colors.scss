@@ -13,3 +13,11 @@
   --clr-data-small: hsl(228, 34%, 66%); //text
   --clr-white: #fff; //text
 }
+
+[data-theme="light"] {
+  --clr-main-bg: hsl(0, 0%, 100%); //BG
+  --clr-top-main-bg: hsl(227, 91%, 100%); //Top bg pattern
+  --clr-card: hsl(228, 46%, 96%); //Card BG
+  --clr-data-small: hsl(230, 12%, 44%); //text
+  --clr-white: hsl(0, 0%, 0%); //text
+}
