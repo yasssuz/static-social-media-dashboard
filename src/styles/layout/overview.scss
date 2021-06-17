@@ -1,0 +1,78 @@
+@use '../core/functions.scss' as *;
+
+.overview {
+  margin-top: rem(46);
+  padding: 0 rem(25);
+
+  h2 {
+    font-weight: bold;
+    font-size: rem(24);
+    line-height: rem(29);
+    color: var(--clr-white);
+    margin-bottom: rem(27);
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    background: var(--clr-card);
+    border-radius: rem(5);
+    padding: rem(21) rem(26);
+    cursor: pointer;
+    transition: filter 0.2s ease;
+
+    &:hover {
+      filter: brightness(1.35);
+    }
+
+    .top-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: rem(23);
+
+      p {
+        font-weight: bold;
+        font-size: rem(15);
+        line-height: rem(18);
+        color: var(--clr-data-small);
+      }
+    }
+
+    .bottom-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      strong {
+        font-weight: bold;
+        font-size: rem(32);
+        line-height: rem(39);
+        color: var(--clr-white);
+      }
+
+      small {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: rem(15);
+        line-height: rem(16);
+        color: var(--clr-lime-green);
+
+        &.negative {
+          color: var(--clr-bright-red);
+        }
+
+        img {
+          margin-right: rem(5);
+        }
+      }
+    }
+  }
+
+  &__item + &__item {
+    margin-top: rem(16);
+  }
+}
