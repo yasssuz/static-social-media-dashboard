@@ -1,0 +1,59 @@
+@use '../core/functions.scss' as *;
+
+.header {
+  background: var(--clr-top-main-bg);
+  height: rem(235);
+  border-radius: 0px 0px 20px 20px;
+
+  &__content {
+    padding: rem(36) rem(25);
+
+    h1 {
+      font-size: rem(25);
+      color: var(--clr-white);
+      line-height: rem(29);
+      font-weight: bold;
+    }
+
+    p {
+      font-size: rem(15);
+      font-weight: bold;
+      line-height: rem(18);
+      color: var(--clr-data-small);
+
+      &.followers {
+        border-bottom: 2px solid hsla(228, 25%, 27%, 1);
+        margin-top: rem(6);
+        padding-bottom: rem(22);
+      }
+    }
+
+    .theme-switcher {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: rem(16) 0;
+
+      button {
+        height: 24px;
+        width: 48px;
+        border-radius: 12px;
+        border: none;
+        background: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+        position: relative;
+
+        &::before {
+          content: '';
+          height: 18px;
+          width: 18px;
+          background: var(--clr-top-main-bg);
+          position: absolute;
+          border-radius: 50%;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 3px;
+        }
+      }
+    }
+  }
+}
