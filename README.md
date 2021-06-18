@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://static-social-media-dashboard.vercel.app/](https://static-social-media-dashboard.vercel.app/)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://www.frontendmentor.io/solutions/mobile-first-with-sass-and-vite-bundler-awesome-xd-hDNpQ-PWx](https://www.frontendmentor.io/solutions/mobile-first-with-sass-and-vite-bundler-awesome-xd-hDNpQ-PWx)
 
 ## My process
 
