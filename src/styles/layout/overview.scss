@@ -2,7 +2,6 @@
 
 .overview {
   margin-top: rem(46);
-  padding: 0 rem(25);
 
   h2 {
     font-weight: bold;
@@ -14,6 +13,16 @@
 
   &__list {
     list-style: none;
+
+    @media screen and (min-width: 620px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(24) rem(30);
+    }
+
+    @media screen and (min-width: 1100px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   &__item {
@@ -74,5 +83,9 @@
 
   &__item + &__item {
     margin-top: rem(16);
+
+    @media screen and (min-width: 620px) {
+      margin-top: 0;
+    }
   }
 }
