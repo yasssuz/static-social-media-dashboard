@@ -9,6 +9,18 @@ main {
 
   &__list {
     list-style: none;
+
+    
+    @media screen and (min-width: 620px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(25);
+    }
+
+    @media screen and (min-width: 1100px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: rem(30);
+    }
   }
 
   &__item {
@@ -101,5 +113,9 @@ main {
 
   &__item + &__item {
     margin-top: rem(32);
+
+    @media screen and (min-width: 620px) {
+      margin-top: 0;
+    }
   }
 }
